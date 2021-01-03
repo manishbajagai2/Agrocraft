@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="Contact.css">
+  <!-- Add font awesome CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Contact Form - AgroCraft</title>
+  <link rel="icon" href="logo.png" type="image/icon">
+</head>
+
+<body>
+  <section id="top">
+    <div class="containerbox">
+      <div class="socail-icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-google"></i>
+      </div>
+      <input type="checkbox" id="check">
+      <label for="check" class="show-btn">
+        <i class="fa fa-bars"></i>
+      </label>
+
+      <ul class="menu-bar">
+        <a href="index.html">Home</a>
+        <a href="About Us.html">About</a>
+        <a href="About Us.html">Our Team</a>
+        <a href="#">News Feed</a>
+        <label for="check" class="hide-btn">
+          <i class="fa fa-times"></i>
+        </label>
+      </ul>
+    </div>
+  </section>
+  <div id="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p style="font-style: italic;">Email us with your email address</p>
+
+
+
+
+      <div class="contact-form">
+
+        <div>
+          <i class="fa fa-map-marker"></i><span class="information"> Lawgate, Jalandhar, Punjab- 144411</span><br>
+          <i class="fa fa-phone"> </i><span class="information"> +91 98745612301</span><br>
+          <i class="fa fa-envelope"></i><span class="information"> manishbajagai2@gmail.com</span>
+        </div>
+
+
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="text" placeholder="Last Name"><br>
+          <input type="Email" placeholder="Email" required><br>
+          <input type="text" placeholder="Subject of this message"><br>
+          <textarea name="message" placeholder="Write Something..." rows="5" required></textarea><br>
+          <button class="submit" onclick="alert('The message you sent will be taken care of very soon !!! ')">Send Message</button>
+        </form>
+      </div>
+    </div>
+</body>
+
+</html>

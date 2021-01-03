@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#top {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.socail-icons {
+  float: left;
+}
+
+.fa {
+  padding: 8px;
+  font-size: 25px;
+  text-decoration: none;
+  transition: 0.7s;
+  opacity: 0.7;
+}
+
+.fa:hover {
+  color: rgb(16, 135, 190);
+  cursor: pointer;
+}
+
+.containerbox {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.menu-bar {
+  float: right;
+  line-height: 100px;
+  padding-right: 5%;
+  z-index: 1;
+}
+
+.menu-bar a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 15px;
+  transition: 0.4s;
+}
+
+.show-btn, .hide-btn {
+  transition: 0.4s;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.show-btn {
+  float: right;
+}
+
+.menu-bar a:hover,
+.show-btn:hover {
+  color: red;
+}
+
+#check {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+  color: red;
+}
+
+.about {
+  padding: 50px;
+  text-align: center;
+  background-color: #22252a;
+  color: white;
+  margin-bottom: 3px;
+}
+
+.about h1 {
+  font-size: 36px;
+  font-family: open sans;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 60px;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-position: under;
+  color: rgb(238, 235, 235);
+  letter-spacing: 2px;
+}
+
+.about p {
+  text-align: justify;
+  text-indent: 30px;
+  font-family: Calibri;
+  font-size: 24px;
+  line-height: 35px;
+  word-spacing: 4px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  position: relative;
+  min-height: 1px;
+}
+
+.team {
+  min-height: 100vh;
+  padding: 60px 15px;
+  background-color: #22252a;
+  float: left;
+  width: 100%;
+}
+
+.team h1 {
+  font-size: 36px;
+  font-family: open sans;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 60px;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-position: under;
+  color: rgb(238, 235, 235);
+  letter-spacing: 2px;
+}
+
+.team .card {
+  width: 30%;
+  float: left;
+  padding: 0px 15px;
+  margin-left: 25px;
+}
+
+.team .card .box {
+  padding: 15px;
+  background-color: #2d3035;
+  border-radius: 5px;
+  transition: margin 1s ease, box-shadow 1s ease;
+}
+
+.team .card .box:hover {
+  margin-top: -15px;
+  box-shadow: 0px 0px 40px black;
+}
+
+.team .card .box img {
+  width: 150px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+.team .card .box h4 {
+  font-size: 20px;
+  font-family: open sans;
+  margin: 20px 0px 10px;
+  color: #ea5e71;
+  text-align: center;
+  font-weight: 700;
+}
+
+.team .card .box h5 {
+  font-size: 16px;
+  font-family: open sans;
+  font-weight: 600;
+  color: #b9b9b9;
+  margin: 0px 0px 15px;
+  text-align: center;
+}
+
+.team .card .box p {
+  color: #b9b9b9;
+  font-size: 15px;
+  font-family: open sans;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+@media(max-width: 991px) {
+  .team .card {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width:550px) {
+  .team .card {
+    width: 100%;
+  }
+}
+
+.menu-bar {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  top: 0;
+  right: -100%;
+  text-align: center;
+  padding: 80px 0;
+  line-height: normal;
+  transition: 0.7s;
+}
+
+.menu-bar a {
+  display: inline-block;
+  padding: 20px;
+  opacity: 0.7;
+  font-size: 22px;
+}
+
+.hide-btn {
+  position: absolute;
+  top: 5px;
+  right: 40px;
+  color: white;
+}
+
+.hide-btn: hover {
+  color: yellow;
+}
+
+#check:checked~.menu-bar {
+  right: 0;
+}
+
+@media screen and (max-width:800px) {
+  .show-btn, .hide-btn {
+    display: block;
+  }
+
+  .menu-bar {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    top: 0;
+    right: -100%;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+
+  .menu-bar a {
+    display: block;
+    padding: 20px;
+  }
+
+  .hide-btn {
+    position: absolute;
+    top: 5px;
+    right: 40px;
+  }
+
+  #check:checked~.menu-bar {
+    right: 0;
+  }
+}

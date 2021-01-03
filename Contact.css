@@ -1,0 +1,275 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#top {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.socail-icons {
+  float: left;
+}
+
+.fa {
+  padding: 8px;
+  font-size: 25px;
+  text-decoration: none;
+  transition: 0.7s;
+  opacity: 0.7;
+}
+
+.fa:hover {
+  color: rgb(16, 135, 190);
+  cursor: pointer;
+}
+
+.containerbox {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.menu-bar {
+  float: right;
+  line-height: 100px;
+  padding-right: 5%;
+  z-index: 1;
+}
+
+.menu-bar a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 15px;
+  transition: 0.4s;
+}
+
+.show-btn, .hide-btn {
+  transition: 0.4s;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.show-btn {
+  float: right;
+}
+
+.menu-bar a:hover,
+.show-btn:hover {
+  color: red;
+}
+
+#check {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+  color: red;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#contact-section {
+  background: url(contact-background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 14%;
+}
+
+#contact-section .container h2 {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-position: under;
+  color: rgb(238, 235, 235);
+  letter-spacing: 2px;
+}
+
+#contact-section .container p {
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3%;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.contact-form i.fa {
+  font-size: 22px;
+  padding: 3%;
+  background-color: none;
+  border-radius: 80%;
+  margin: 2%;
+  cursor: pointer;
+  border: 2px solid rgb(190, 190, 190);
+  color: rgb(190, 190, 190);
+}
+
+.contact-form i.fa:hover {
+  cursor: pointer;
+  border: 2px solid white;
+  color: white;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.information {
+  font-size: 16px;
+  font-style: italic;
+  color: white;
+  letter-spacing: 2px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  width: 70%;
+  background-color: rgba(136, 133, 133, 0.5);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 14px;
+  /* opacity: 0.5;*/
+}
+
+textarea {
+  margin: 10px;
+  width: 72%;
+  height: 150px;
+  background-color: rgba(136, 133, 133, 0.5);
+  color: white;
+  border-radius: 4px;
+  border: none;
+  resize: vertical;
+  outline: none;
+}
+
+textarea::placeholder {
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.submit {
+  width: 40%;
+  background: none;
+  padding: 4px;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 33px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-left: 18%;
+  margin-top: 3%;
+  border: 3px solid rgb(190, 190, 190);
+  border-radius: 2px;
+  color: rgb(190, 190, 190);
+}
+
+.submit:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-bar {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  top: 0;
+  right: -100%;
+  text-align: center;
+  padding: 80px 0;
+  line-height: normal;
+  transition: 0.7s;
+}
+
+.menu-bar a {
+  display: inline-block;
+  padding: 20px;
+  opacity: 0.7;
+  font-size: 22px;
+}
+
+.hide-btn {
+  position: absolute;
+  top: 5px;
+  right: 40px;
+  color: white;
+}
+
+.hide-btn: hover {
+  color: yellow;
+}
+
+#check:checked~.menu-bar {
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  #contact-section .contact-form {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #contact-section .submit {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .show-btn, .hide-btn {
+    display: block;
+  }
+
+  .menu-bar {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    top: 0;
+    right: -100%;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+
+  .menu-bar a {
+    display: block;
+    padding: 20px;
+  }
+
+  .hide-btn {
+    position: absolute;
+    top: 5px;
+    right: 40px;
+  }
+
+  #check:checked~.menu-bar {
+    right: 0;
+  }
+}

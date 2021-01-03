@@ -1,0 +1,779 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  padding-bottom: 58px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*----------------------------------Responsive Navigation Bar-----------------------------*/
+.header {
+  overflow: hidden;
+  background-image: url('header.jpg');
+  background-size: cover;
+  padding: 13px 10px;
+}
+
+#navi2 {
+  float: left;
+  color: green;
+  text-align: center;
+  padding: 12px 50px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 6px;
+  margin-right: 5px;
+  background-color: #ddd;
+}
+
+#navi3 {
+  float: left;
+  color: green;
+  text-align: center;
+  padding: 12px 50px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 6px;
+  margin-right: 5px;
+  background-color: #ddd;
+}
+
+.header .logo {
+  width: 35%;
+  float: left;
+  height: 100%;
+  display: block;
+}
+
+.header .logo img {
+  width: 220px;
+  height: auto;
+}
+
+.header-right {
+  float: right;
+  padding-top: 25px;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header .logo,
+  .header-right {
+    float: none;
+  }
+}
+
+/*-------------------------------------------- Code for Responsive Parallax Effect only ---------------------------------------------*/
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.parallaximg1, .parallaximg2 {
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.parallaximg1 {
+  background-image: url('background.jpg');
+  min-height: 100px;
+}
+
+.parallaximg2 {
+  background-image: url('background.jpg');
+  min-height: 100px;
+}
+
+.section-light {
+  background-color: gray;
+}
+
+.big-box {
+  position: relative;
+  height: 185px;
+  width: auto;
+  background-image: url('two.jpg');
+  background-color: cover margin-top: 40px;
+}
+
+#box1 {
+  background-image: url('two.jpg');
+  width: 650px;
+  float: left;
+  height: 90px;
+  margin: 0;
+}
+
+#box2 {
+  background-image: url('two.jpg');
+  width: 800px;
+  float: left;
+  height: 90px;
+  margin: 0;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text1] {
+  background-color: #f1f1f1;
+  width: 180%;
+}
+
+#btn1 {
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+  width: 170px;
+  margin-left: 290px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 22px;
+  border: none;
+  padding: 10px;
+  box-shadow: 0 9px #999;
+}
+
+#btn1:hover {
+  background-color: #3e8e41
+}
+
+#btn1:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+#button1 {
+  width: 600px;
+  height: 55px;
+  background: blue;
+  border: none;
+  border-radius: 13px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 20px;
+  transition: 0.2s ease;
+  cursor: pointer;
+  margin-left: 90px;
+  box-shadow: 0 9px #999;
+}
+
+/*--------------------------- Log in as Customer (inside) -----------------------------*/
+.bg-modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.logbox {
+  width: 500px;
+  height: 450px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.logbox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.logbox input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.logbox input[type="text55"], input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.logbox #button55 {
+  border: none;
+  outline: none;
+  width: 250px;
+  height: 40px;
+  background: green;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  margin-left: 40%;
+}
+
+.logbox #button55:hover {
+  color: black
+}
+
+.logbox input[type="submit55"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+.logbox a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.logbox a:hover {
+  color: #ffc107;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 42px;
+  color: rgb(0, 255, 255);
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+#button1:hover,
+#button1:focus {
+  background: red;
+  transition: 0.2s ease;
+}
+
+#button1:active {
+  background-color: orange;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*--------------------------- Log in as Seller (inside) -----------------------------*/
+#button2 {
+  width: 600px;
+  height: 55px;
+  background: red;
+  border: none;
+  border-radius: 13px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 20px;
+  transition: 0.2s ease;
+  cursor: pointer;
+  margin-left: 70px;
+  box-shadow: 0 9px #999;
+}
+
+@media screen and (max-width: 1500px) {
+  .section-light {
+    height: 53%;
+  }
+
+  .big-box {
+    height: 100%;
+  }
+
+  #btn1 {
+    display: block;
+  }
+
+  #button1 {
+    display: block;
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 8px;
+  }
+
+  #button2 {
+    display: block;
+    position: absolute;
+    margin-top: 285px;
+    margin-left: 8px;
+  }
+}
+
+.bg-modal1 {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.logbox1 {
+  width: 500px;
+  height: 450px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.avatar1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.logbox1 p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.logbox1 input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.logbox1 input[type="text56"], input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.logbox1 #button56 {
+  border: none;
+  outline: none;
+  width: 250px;
+  height: 40px;
+  background: yellow;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  margin-left: 40%;
+}
+
+.logbox1 #button56:hover {
+  color: black;
+}
+
+.logbox1 input[type="submit56"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+.logbox1 a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgray;
+}
+
+.logbox1 a:hover {
+  color: #ffc107;
+}
+
+.close1 {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 42px;
+  color: rgb(0, 255, 255);
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+#button2:hover,
+#button2:focus {
+  background: blue;
+  transition: 0.2s ease;
+}
+
+#button2:active {
+  background-color: green;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.section-middle {
+  background-image: url('one.jpg');
+  background-size: cover;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.section-dark {
+  background-color: gray;
+}
+
+/*-------------------------------------------- Code for Contact Info only ---------------------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  background: #efefef;
+  font-size: 16px;
+  color: #777;
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+.login-box {
+  position: relative;
+  margin: 5% auto;
+  height: 400px;
+  width: 600px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.left-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+#submit4 {
+  margin-bottom: 28px;
+  width: 120px;
+  height: 32px;
+  background: #f44336;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+#submit4:hover,
+#submit4:focus {
+  background: #ff5722;
+  transition: 0.2s ease;
+}
+
+.right-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  background-image: url(social.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.or {
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background: #efefef;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  line-height: 40px;
+  text-align: center;
+}
+
+.right-box .signinwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+button.social {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.facebook {
+  background: #32508e;
+}
+
+.twitter {
+  background: #55acee;
+}
+
+.google {
+  background: #dd4b39;
+}
+
+@media screen and (max-width: 650px) {
+  .login-box {
+    float: none;
+    width: 300px;
+  }
+
+  /*padding-top: 80%;*/
+  .or {
+    position: absolute;
+    top: 360px;
+    left: 120px;
+  }
+
+  .section-middle {
+    padding-bottom: 360px;
+  }
+
+  .right-box {
+    position: absolute;
+    top: 380px;
+    left: 0;
+  }
+}
+
+/*-------------------------------------------- Code for Responsive FOOTER only ---------------------------------------------*/
+.footer {
+  width: 100vw;
+  display: block;
+  overflow: hidden;
+  padding: 70px;
+  box-sizing: border-box;
+  background-image: url('footer.jpg');
+  background-size: cover;
+  bottom: 59px;
+  width: 100%;
+}
+
+.inner_footer {
+  display: block;
+  margin: 0 auto;
+  width: 1100px;
+  height: 100%;
+}
+
+.inner_footer .logo_container {
+  width: 38%;
+  float: left;
+  height: 50%;
+  display: block;
+}
+
+.inner_footer .logo_container img {
+  width: 220px;
+  height: auto;
+}
+
+.inner_footer .footer_first {
+  width: calc(21.6666666667% - 20px);
+  margin-right: 10px;
+  float: left;
+  height: 100%;
+}
+
+.inner_footer .footer_first:last-child {
+  margin-right: 0;
+}
+
+.inner_footer .footer_first h1 {
+  font-family: 'arial';
+  font-size: 22px;
+  color: white;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.inner_footer .footer_first a {
+  font-family: 'arial';
+  font-size: 18px;
+  color: white;
+  display: block;
+  font-weight: 200;
+  width: 100%;
+  padding-bottom: 5px;
+  margin-left: 35px;
+}
+
+.inner_footer .footer_first li {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 20px;
+}
+
+.inner_footer .footer_first span {
+  color: white;
+  font-family: 'arial';
+  font-size: 16px;
+  font-weight: 200;
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+  margin-left: 40px;
+}
+
+@media(max-width: 1100px) {
+  .footer .inner_footer {
+    width: 100%;
+  }
+
+  .inner_footer .logo_container,
+  .inner_footer .footer_first {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.lastfooter {
+  text-align: center;
+  background-color: darkgray;
+  color: white;
+  padding: 13px;
+}
